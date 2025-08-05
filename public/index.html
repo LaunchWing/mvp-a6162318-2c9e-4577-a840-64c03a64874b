@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ResuMeister - Crafting Future-Ready Resumes with AI Precision</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-100 text-gray-900">
+    <header class="bg-[#2B2D42] text-white p-4 flex justify-between items-center">
+        <img src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-eeM7RLe3Wv2HZ7Toub47POas/user-rnGwZEmjnwoUoF8lEvadvt0O/img-5RZuycsytoZMn41bMFvDHVH8.png?st=2025-08-05T19%3A27%3A06Z&se=2025-08-05T21%3A27%3A06Z&sp=r&sv=2024-08-04&sr=b&rscd=inline&rsct=image/png&skoid=cc612491-d948-4d2e-9821-2683df3719f5&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-08-05T09%3A16%3A56Z&ske=2025-08-06T09%3A16%3A56Z&sks=b&skv=2024-08-04&sig=Cbu7FvUjHtwWzvfjOgDE4t9pYf3Vjw%2BdIW8lnpFRacE%3D" alt="ResuMeister Logo" class="h-12">
+        <h1 class="text-xl font-bold">ResuMeister</h1>
+    </header>
+    <main class="container mx-auto p-8">
+        <h2 class="text-3xl font-semibold mb-4">Crafting Future-Ready Resumes with AI Precision</h2>
+        <p class="mb-8">Welcome to ResuMeister! Start building your professional resume with AI-powered templates tailored to your career goals.</p>
+        <form id="resume-form" class="bg-white p-6 rounded shadow-md">
+            <div class="mb-4">
+                <label for="name" class="block text-sm font-medium text-gray-700">Name</label>
+                <input type="text" id="name" name="name" class="mt-1 block w-full p-2 border border-gray-300 rounded-md" required>
+            </div>
+            <div class="mb-4">
+                <label for="industry" class="block text-sm font-medium text-gray-700">Industry</label>
+                <input type="text" id="industry" name="industry" class="mt-1 block w-full p-2 border border-gray-300 rounded-md" required>
+            </div>
+            <div class="mb-4">
+                <label for="experience" class="block text-sm font-medium text-gray-700">Experience Level</label>
+                <select id="experience" name="experience" class="mt-1 block w-full p-2 border border-gray-300 rounded-md" required>
+                    <option value="">Select Experience Level</option>
+                    <option value="entry">Entry Level</option>
+                    <option value="mid">Mid Level</option>
+                    <option value="senior">Senior Level</option>
+                </select>
+            </div>
+            <button type="submit" class="bg-[#EF233C] text-white py-2 px-4 rounded hover:bg-[#D90429]">Generate Resume</button>
+        </form>
+    </main>
+    <footer class="bg-[#8D99AE] text-white p-4 text-center">
+        <p>&copy; 2023 ResuMeister. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
